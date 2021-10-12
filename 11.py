@@ -3,5 +3,6 @@
 if __name__ == '__main__':
     n = int(input())
     arr = list(map(int, input().split()))
-    list1=list(set(arr))
-    print(list1[-2])
+    set1=set(arr)
+    set1.remove(max(arr))
+    print(max(set1))
